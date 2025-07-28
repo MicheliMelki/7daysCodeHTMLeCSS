@@ -22,7 +22,87 @@ body {
     color: var(--texto-principal);
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar {
+    display: flex;
+    align-items: space-between;
+    background-color: var(--fundo-card);
+    padding: 10px 20px;
+    justify-content: space-between;
+}
+
+.search {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search input {
+    padding-left: 30px;
+    height: 30px;
+    border-radius: 5px;
+    color: var(--texto-principal);
+    background: var(--input);
+    border: none;
+    outline: none;
+}
+
+
+
+.search .material-symbols-outlined {
+    position: absolute;
+    left: 8px;
+    color: var(--texto-principal);
+    font-size: 20px;
+    pointer-events: none;
+}
+
+
+.menu-icons {
+    margin: 0;
+    display: flex;
+    color: var(--texto-principal);
+    gap: 20px;
+}
+
+.menu-icons a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: var(--texto-principal);
+    font-size: 12px;
+}
+
+.menu-icons a:hover {
+    color: #0073b1;
+}
+
+.material-symbols-outlined {
+    font-size: 24px;
+}
+
+.divider {
+    width: 1px;
+    height: 30px;
+    background-color: white;
+    margin: 0 10px;
+}
+
+.solucoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 header {
+    margin-top: 30px;
     position: absolute;
     /* muda para absolute para usar top e left */
     top: 50px;
@@ -33,6 +113,8 @@ header {
     border-radius: 15px;
     background-color: var(--fundo-card);
 }
+
+
 
 .menu {
     position: relative;
@@ -60,9 +142,12 @@ header {
 }
 
 .info_perfil {
-    display: flex; /* Torna as colunas lado a lado */
-  gap: 30px; /* Espaço entre as colunas */
-  align-items: flex-start; /* Alinha topo */
+    display: flex;
+    /* Torna as colunas lado a lado */
+    gap: 30px;
+    /* Espaço entre as colunas */
+    align-items: flex-start;
+    /* Alinha topo */
 
     margin-top: 25px;
     width: 195;
@@ -136,11 +221,12 @@ header {
     cursor: pointer;
 }
 
-.info_perfil > div.col_direita {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+.info_perfil>div.col_direita {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
+
 .logo_empresa {
     margin-bottom: 1000px;
     margin-left: 550px;
@@ -161,7 +247,8 @@ header {
 .logo_empresa {
     width: 25px;
     height: 25px;
-    margin: 0; /* remove margens estranhas */
+    margin: 0;
+    /* remove margens estranhas */
     display: inline-block;
 }
 
