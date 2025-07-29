@@ -346,3 +346,111 @@ header {
     font-size: 12px;
     color: var(--texto-principal);
 }
+
+.card-atividade {
+    width: 780px;
+    height: 371px;
+    top: 878px;
+    left: 154px;
+    border-radius: 16px;
+    background: var(--fundo-card);
+}
+
+.card-atividade h2 {
+    padding-top: 10px;
+    padding-left: 16px;
+}
+
+.seg {
+    font-size: 14px;
+    padding-left: 16px;
+    color: var(--primario);
+}
+
+.qm-comentou {
+    padding-top: 5px;
+    padding-left: 16px;
+    color: var(--texto-secundario);
+    font-size: 14px;
+}
+
+.publimg {
+    display: flex;
+    flex-direction: row;
+    margin-left: 16px;
+    width: 64px;
+    height: 64px;
+    top: 979px;
+}
+
+.atividade-item {
+    display: flex;
+    gap: 16px;
+    margin: 16px;
+    align-items: flex-start;
+}
+
+.atividade-item .publimg {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+}
+
+.atividade-item .txt-atv {
+    flex: 1;
+    color: var(--texto-principal);
+    font-size: 14px;
+    line-height: 1.4;
+    padding-top: 10px;
+}
+
+.area-interacao {
+  display: flex;
+  gap: 8px; 
+  margin: 8px 0;
+  margin-top: 5px;
+  font-size: 14px;
+  color: var(--texto-principal);
+  font-size: 12px;
+}
+
+.num{
+padding-left: 55px;
+}
+
+.cmt{
+padding-left: 600px;
+}
+
+.exibir {
+    text-align: center;
+    color: var(--texto-secundario);
+
+}
+
+.sobre {
+    width: 780px;
+    height: 134px;
+    top: 1257px;
+    left: 154px;
+    margin-top: 30px;
+    border-radius: 16px;
+    background: var(--fundo-card);
+}
+
+.sobre h2 {
+    padding-top: 10px;
+    padding-left: 16px;
+    width: 53px;
+    height: 30px;
+    top: 1273px;
+    left: 178px;
+    font-size: 20px;
+}
+
+.sobre p {
+    padding-top: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+    text-align: justify;
+}
