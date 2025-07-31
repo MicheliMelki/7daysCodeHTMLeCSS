@@ -1,7 +1,8 @@
+/* --- ESTILOS GLOBAIS E VARIÁVEIS --- */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -22,28 +23,23 @@ body {
     color: var(--texto-principal);
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
+/* --- BARRA DE NAVEGAÇÃO SUPERIOR (NAVBAR) --- */
 .navbar {
-    display: flex;
-    align-items: space-between;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between; 
     background-color: var(--fundo-card);
     padding: 10px 20px;
-    justify-content: space-between;
 }
 
 .search {
-    position: relative;
+    position: relative; 
     display: flex;
     align-items: center;
 }
 
 .search input {
-    padding-left: 30px;
+    padding-left: 30px; 
     height: 30px;
     border-radius: 5px;
     color: var(--texto-principal);
@@ -52,27 +48,23 @@ body {
     outline: none;
 }
 
-
-
 .search .material-symbols-outlined {
-    position: absolute;
+    position: absolute; 
     left: 8px;
     color: var(--texto-principal);
     font-size: 20px;
-    pointer-events: none;
+    pointer-events: none; 
 }
 
-
 .menu-icons {
-    margin: 0;
-    display: flex;
+    display: flex; 
     color: var(--texto-principal);
-    gap: 20px;
+    gap: 20px; 
 }
 
 .menu-icons a {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     align-items: center;
     text-decoration: none;
     color: var(--texto-principal);
@@ -80,18 +72,18 @@ body {
 }
 
 .menu-icons a:hover {
-    color: #0073b1;
+    color: #0073b1; 
 }
 
 .material-symbols-outlined {
-    font-size: 24px;
+    font-size: 24px; 
 }
 
 .divider {
     width: 1px;
     height: 30px;
     background-color: white;
-    margin: 0 10px;
+    margin: 0 10px; 
 }
 
 .solucoes {
@@ -100,33 +92,57 @@ body {
     align-items: center;
 }
 
-
-header {
-    margin-top: 30px;
-    position: absolute;
-    /* muda para absolute para usar top e left */
-    top: 50px;
-    /* quanto do topo da página */
-    left: 154px;
-    width: 780px;
-    height: 418px;
-    border-radius: 15px;
-    background-color: var(--fundo-card);
+/* --- LAYOUT PRINCIPAL DO CONTEÚDO (COLUNAS) --- */
+.main-content-wrapper {
+    display: flex; 
+    justify-content: center; 
+    gap: 24px; 
+    padding: 24px 0; 
+    width: 100%; 
+    max-width: 1200px; 
+    margin: 24px auto; 
 }
 
+.left-column {
+    display: flex;
+    flex-direction: column; 
+    gap: 12px; 
+    width: 780px; 
+    
+}
 
+.right-column {
+    width: 300px; 
+}
+
+/* --- ESTILOS GERAIS PARA TODOS OS CARDS --- */
+.card {
+    background-color: var(--fundo-card);
+    border-radius: 16px;
+    padding: 16px;
+    margin-top: 0; 
+    height: auto; 
+}
+
+/* --- SEÇÃO DE CABEÇALHO DO PERFIL (HEADER) --- */
+.profile-header-card {
+    width: 100%; 
+    height: 418px; 
+    border-radius: 15px;
+    background-color: var(--fundo-card);
+    }
 
 .menu {
-    position: relative;
+    position: relative; 
 }
 
 .menu .img_capa {
     width: 100%;
     height: 230px;
-    object-fit: cover;
+    object-fit: cover; 
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
-    margin-top: 0;
+    margin-top: 0; 
 }
 
 .img_perfil {
@@ -135,28 +151,18 @@ header {
     object-fit: cover;
     border-radius: 50%;
     border: 3px solid white;
-    position: absolute;
+    position: absolute; 
     top: 100px;
     left: 20px;
-    z-index: 2;
+    z-index: 2; 
 }
 
 .info_perfil {
-    display: flex;
-    /* Torna as colunas lado a lado */
-    gap: 30px;
-    /* Espaço entre as colunas */
-    align-items: flex-start;
-    /* Alinha topo */
-
+    display: flex; 
+    gap: 30px; 
+    align-items: flex-start; 
     margin-top: 25px;
-    width: 195;
-    height: 30;
-    top: 362px;
-    margin-left: 23PX;
-    top: 100px;
-    left: 140px;
-    right: 20px;
+    margin-left: 23px; 
     color: var(--texto-principal);
 }
 
@@ -165,13 +171,9 @@ header {
 }
 
 .profissao_perfil {
-    width: 350;
-    height: 20;
-    top: 392px;
-    left: 178px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 600;
-    font-style: semibold;
+    font-style: normal; 
     font-size: 16px;
     color: var(--texto-principal);
 }
@@ -180,15 +182,6 @@ header {
     font-size: 0.9rem;
     text-align: left;
     color: var(--texto-secundario);
-}
-
-.info_perfil .bnt_left {
-    width: 128;
-    height: 32;
-    top: 488px;
-    left: 178px;
-    border-radius: 16px;
-    color: var(--primario);
 }
 
 .localizacao_perfil strong {
@@ -221,34 +214,24 @@ header {
     cursor: pointer;
 }
 
-.info_perfil>div.col_direita {
+.info_perfil > div.col_direita {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     gap: 12px;
 }
 
-.logo_empresa {
-    margin-bottom: 1000px;
-    margin-left: 550px;
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-}
-
-/* Aqui começa a correção para o logo e nome lado a lado */
 .empresa-box {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-left: 23px;
-    margin-top: 10px;
+    display: flex; 
+    align-items: center; 
+    gap: 8px; 
+    margin-left: 23px; 
+    margin-top: 10px; 
 }
 
 .logo_empresa {
     width: 25px;
     height: 25px;
-    margin: 0;
-    /* remove margens estranhas */
+    margin: 0; 
     display: inline-block;
 }
 
@@ -259,49 +242,24 @@ header {
     color: var(--texto-principal);
 }
 
-/* Estilo para o segundo logo e nome */
-.ensino_logo {
-    width: 25px;
-    height: 25px;
-    vertical-align: middle;
-    margin-right: 8px;
-}
-
-.ensino {
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 20px;
-    color: var(--texto-principal);
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 0;
-}
-
-/* Destaques */
+/* --- SEÇÃO DE DESTAQUES --- */
 .destaques {
-    margin: 30px;
-    width: 780px;
-    height: 312px;
-    margin-left: 0px;
-    background: var(--fundo-card);
-    border-radius: 16px;
-    padding: 16px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
 }
 
 .publicacoes {
-    display: flex;
+    display: flex; 
     flex-direction: row;
-    gap: 16px;
-    margin-top: 16px;
-    justify-content: start;
-    flex-wrap: nowrap;
+    gap: 16px; 
+    margin-top: 16px; 
+    justify-content: flex-start; 
+    flex-wrap: wrap; 
 }
 
 .publicacao {
-    width: 238px;
-    height: auto;
+    width: 238px; 
+    height: auto; 
     display: flex;
     flex-direction: column;
     padding: 8px;
@@ -312,10 +270,6 @@ header {
 
 .texto-superior {
     margin-left: 8px;
-    width: 60px;
-    height: 20px;
-    top: 618px;
-    left: 183px;
     font-size: 12px;
     line-height: 20px;
     color: var(--texto-principal);
@@ -326,38 +280,17 @@ header {
 .img_3 {
     width: 100%;
     height: auto;
-
 }
 
 .texto-inferior {
-    width: 206px;
-    height: 20px;
-    top: 638px;
-    left: auto;
     font-size: 14px;
     line-height: 20px;
     color: var(--texto-principal);
 }
 
-.area-interacao {
-    display: flex;
-    gap: 120px;
-    margin-top: 8px;
-    font-size: 12px;
-    color: var(--texto-principal);
-}
-
-.card-atividade {
-    width: 780px;
-    height: 371px;
-    top: 878px;
-    left: 154px;
-    border-radius: 16px;
-    background: var(--fundo-card);
-}
-
+/* --- SEÇÃO DE ATIVIDADES --- */
 .card-atividade h2 {
-    padding-top: 10px;
+    padding-top: 10px; 
     padding-left: 16px;
 }
 
@@ -375,19 +308,16 @@ header {
 }
 
 .publimg {
-    display: flex;
-    flex-direction: row;
-    margin-left: 16px;
+    margin-left: 16px; 
     width: 64px;
     height: 64px;
-    top: 979px;
 }
 
 .atividade-item {
-    display: flex;
-    gap: 16px;
-    margin: 16px;
-    align-items: flex-start;
+    display: flex; 
+    gap: 16px; 
+    margin: 16px; 
+    align-items: flex-start; 
 }
 
 .atividade-item .publimg {
@@ -397,54 +327,42 @@ header {
 }
 
 .atividade-item .txt-atv {
-    flex: 1;
+    flex: 1; 
     color: var(--texto-principal);
     font-size: 14px;
     line-height: 1.4;
     padding-top: 10px;
 }
 
+/* Ajuste da área de interação os card */
 .area-interacao {
-  display: flex;
-  gap: 8px; 
-  margin: 8px 0;
-  margin-top: 5px;
-  font-size: 14px;
-  color: var(--texto-principal);
-  font-size: 12px;
+    display: flex;
+    justify-content: space-between; 
+    margin: 8px 0; 
+    margin-top: 5px;
+    font-size: 14px;
+    color: var(--texto-principal);
+    font-size: 12px;
+    padding: 0 16px; 
 }
 
-.num{
-padding-left: 55px;
+.num {
+    padding-left: 0; 
 }
 
-.cmt{
-padding-left: 600px;
+.cmt {
+    padding-left: 0; 
 }
 
 .exibir {
     text-align: center;
     color: var(--texto-secundario);
-
-}
-
-.sobre {
-    width: 780px;
-    height: 134px;
-    top: 1257px;
-    left: 154px;
-    margin-top: 30px;
-    border-radius: 16px;
-    background: var(--fundo-card);
+    padding: 16px; 
 }
 
 .sobre h2 {
     padding-top: 10px;
     padding-left: 16px;
-    width: 53px;
-    height: 30px;
-    top: 1273px;
-    left: 178px;
     font-size: 20px;
 }
 
@@ -453,4 +371,46 @@ padding-left: 600px;
     padding-left: 16px;
     padding-right: 16px;
     text-align: justify;
+}
+
+/* --- SEÇÃO DE EXPERIÊNCIA (EXPERIENCE) --- */
+.experiencia {
+       padding-bottom: 16px;
+}
+
+.experiencia-header {
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+    padding-bottom: 10px; 
+    padding-left: 16px; 
+    margin-bottom: 10px; 
+}
+
+.ex-img {
+    width: 40px; 
+    height: 40px;
+    object-fit: cover;
+}
+
+.experiencia h2 {
+    padding-top: 0; 
+    padding-left: 0; 
+    font-size: 20px;
+    margin-bottom: 0; 
+}
+
+.experiencia-item {
+    margin-bottom: 15px;
+    padding-left: 67px;  
+}
+
+.experiencia-item h4 {
+    margin-top: 5px;
+    color: var(--texto-principal);
+}
+
+.experiencia-item p {
+    font-size: 14px;
+    color: var(--texto-secundario);
 }
