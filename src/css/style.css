@@ -373,7 +373,7 @@ body {
     text-align: justify;
 }
 
-/* --- SEÇÃO DE EXPERIÊNCIA (EXPERIENCE) --- */
+/* --- SEÇÃO DE EXPERIÊNCIA --- */
 .experiencia {
        padding-bottom: 16px;
 }
@@ -385,12 +385,6 @@ body {
     padding-bottom: 10px; 
     padding-left: 16px; 
     margin-bottom: 10px; 
-}
-
-.ex-img {
-    width: 40px; 
-    height: 40px;
-    object-fit: cover;
 }
 
 .experiencia h2 {
@@ -414,3 +408,57 @@ body {
     font-size: 14px;
     color: var(--texto-secundario);
 }
+
+    /* SEÇÃO FORMAÇÃO */
+
+.area-form {
+  padding: 0 16px;
+  color: var(--texto-principal);
+  padding-top: 14px;
+  margin-top: 8px;
+  background: var(--fundo-card);
+  border-radius: 16px;
+  width: 780px;
+  height: 127px;
+}
+
+.titulo-form {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.form-inf {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.bloco-form {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.bloco-form img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+    /* SEÇÃO FORMAÇÃO */
+.area-idiomas{
+    padding: 0 16px;
+  color: var(--texto-principal);
+  padding-top: 14px;
+  margin-top: 8px;
+  background: var(--fundo-card);
+  border-radius: 16px;
+  width: 780px;
+  height: 127px;
+}
+
+.area-idiomas p{
+font-size: 14px;
+color: var(--texto-secundario);
+}
+
