@@ -2,239 +2,354 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="src/css/style.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 
-  <title>LinkedIn</title>
+    <title>LinkedIn</title>
 </head>
 
 <body>
-  <nav class="navbar">
-    <img src="src/img/Vector.png" alt="Logo LinkedIn" class="logo" />
+    <nav class="navbar">
+        <img src="src/img/Vector.png" alt="Logo LinkedIn" class="logo" />
 
-    <div class="search">
-      <span class="material-symbols-outlined">search</span>
-      <input type="text" placeholder="Pesquisar" />
+        <div class="search">
+            <span class="material-symbols-outlined">search</span>
+            <input type="text" placeholder="Pesquisar" />
+        </div>
+
+        <div class="menu-icons">
+            <a href="#">
+                <span class="material-symbols-outlined">home</span>
+                <p>Início</p>
+            </a>
+            <a href="#">
+                <span class="material-symbols-outlined">group</span>
+                <p>Minha rede</p>
+            </a>
+            <a href="#">
+                <span class="material-symbols-outlined">badge</span>
+                <p>Vagas</p>
+            </a>
+            <a href="#">
+                <span class="material-symbols-outlined">chat</span>
+                <p>Mensagens</p>
+            </a>
+            <a href="#">
+                <span class="material-symbols-outlined">notifications</span>
+                <p>Notificações</p>
+            </a>
+
+            <div class="divider"></div>
+
+            <a href="#" class="solucoes">
+                <span class="material-symbols-outlined">apps</span>
+                <p>Soluções</p>
+            </a>
+        </div>
+    </nav>
+
+    <div class="main-content-wrapper">
+        <div class="left-column">
+            <header class="profile-header-card">
+                <div class="menu">
+                    <img src="src/img/capa_perfil.png" alt="Capa do Perfil" class="img_capa" />
+                    <img src="src/img/foto_perfil.jpg" alt="Foto de Perfil" class="img_perfil" />
+
+                    <div class="info_perfil">
+                        <div class="col_esquerda">
+                            <h3 class="nome_perfil">Micheli Melki</h3>
+                            <p class="profissao_perfil">
+                                Desenvolvedora Front-End | HTML | CSS | Typescript
+                            </p>
+                            <p class="descricao_perfil">
+                                Fala sobre #javascript, #frontend, #reactjs, e #backend
+                            </p>
+                            <p class="localizacao_perfil">
+                                Itapevi, São Paulo, Brasil
+                                <strong>informações de contato</strong>
+                            </p>
+                            <p class="seguindo_conexao">Seguindo 100 Conexões 130</p>
+
+                            <button class="btn_left">Mensagem</button>
+                            <button class="btn_rigth">Mais</button>
+                        </div>
+
+                        <div class="col_direita">
+                            <div class="empresa-box">
+                                <img src="src/img/univesp_logo.png" alt="Logo Univesp" class="logo_empresa" />
+                                <span class="empresa">Univesp</span>
+                            </div>
+                            <div class="empresa-box">
+                                <img src="src/img/alura_logo.png" alt="Logo Alura" class="logo_empresa" />
+                                <span class="empresa">Alura</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <section class="destaques card">
+                <h2>Destaques</h2>
+                <div class="publicacoes">
+                    <div class="publicacao">
+                        <p class="texto-superior">Publicação</p>
+                        <p class="texto-inferior">Desenvolvimento de Software</p>
+                        <img src="src/img/publicacao-1.jpg" class="img_1" alt="Imagem destaque" />
+                        <div class="area-interacao">
+                            <p class="interacao">124</p>
+                            <p class="comentario">5 comentários</p>
+                        </div>
+                    </div>
+
+                    <div class="publicacao">
+                        <p class="texto-superior">Publicação</p>
+                        <p class="texto-inferior">Desenvolvimento de Software</p>
+                        <img src="src/img/publicacao-2.jpg" class="img_2" alt="Imagem destaque" />
+                        <div class="area-interacao">
+                            <p class="interacao">124</p>
+                            <p class="comentario">5 comentários</p>
+                        </div>
+                    </div>
+
+                    <div class="publicacao">
+                        <p class="texto-superior">Publicação</p>
+                        <p class="texto-inferior">Desenvolvimento de Software</p>
+                        <img src="src/img/publicacao-3.jpg" class="img_3" alt="Imagem destaque" />
+                        <div class="area-interacao">
+                            <p class="interacao">124</p>
+                            <p class="comentario">5 comentários</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card-atividade card">
+                <h2>Atividades</h2>
+                <p class="seg">154 seguidores</p>
+                <div class="publiatv">
+                    <p class="qm-comentou">Lana Del Rey publicou isso 1 sem</p>
+                    <div class="atividade-item">
+                        <img src="src/img/publicacao-1.jpg" alt="Publicação" class="publimg" />
+                        <p class="txt-atv">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                            dolorum aut ullam, aliquid minus quia quis odio vel sed a
+                            blanditiis excepturi doloremque est sapiente neque cupiditate
+                            quod dolore nulla.
+                        </p>
+                    </div>
+                    <div class="area-interacao">
+                        <p class="num">124</p>
+                        <p class="cmt">5 comentários</p>
+                    </div>
+                    <hr />
+                    <p class="qm-comentou">Zayn Malik publicou isso 1 sem</p>
+                    <div class="atividade-item">
+                        <img src="src/img/publicacao-2.jpg" alt="Publicação" class="publimg" />
+                        <p class="txt-atv">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                            dolorum aut ullam, aliquid minus quia quis odio vel sed a
+                            blanditiis excepturi doloremque est sapiente neque cupiditate
+                            quod dolore nulla.
+                        </p>
+                    </div>
+                    <div class="area-interacao">
+                        <p class="num">124</p>
+                        <p class="cmt">5 comentários</p>
+                    </div>
+                    <hr />
+                    <p class="exibir">Exibir todas as atividades</p>
+                </div>
+            </section>
+
+            <section class="sobre card">
+                <h2>Sobre</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis,
+                    recusandae? Doloribus culpa hic provident facilis atque, magni
+                    quaerat voluptatibus delectus, doloremque voluptates tempore
+                    deserunt illum, iste quod repellendus blanditiis quisquam!
+                </p>
+            </section>
+
+            <section class="experiencia card">
+                <h2>Experiência</h2>
+                <div class="experiencia-header">
+                    <img class="ex-img" src="src/img/empresa-foto.png" alt="Logo da Empresa" />
+                    <div class="empresa-info">
+                        <h3>Empresa</h3>
+                        <p>1 a 7 m</p>
+                    </div>
+                </div>
+
+                <div class="experiencia-item">
+                    <h3>Fullstack Developer</h3>
+                    <p>Tempo integral</p>
+                    <p>jan de 2022 - o momento 5 meses</p>
+                    <p>Cidade, estado e país</p>
+                </div>
+                <div class="experiencia-item">
+                    <div class="empresa-info">
+                        <h3>Fullstack Devoloper (JR)</h3>
+                    </div>
+                    <p>Tempo integral</p>
+                    <p>jun de 2021 - jan de 2022 8 meses</p>
+                    <p>Cidade, estado e país</p>
+                </div>
+                <div class="experiencia-item">
+                    <div class="empresa-info">
+                        <h3>Front-end Developer</h3>
+                    </div>
+                    <p>Tempo integral</p>
+                    <p>jan de 2021 - jun de 2021 6 meses</p>
+                    <p>Cidade, estado e país</p>
+                </div>
+            </section>
+
+            <section class="area-form">
+                <h3 class="titulo-form">Formação acadêmica</h3>
+                <div class="form-inf">
+                    <div class="bloco-form">
+                        <img src="src/img/empresa-foto (1).png">
+                        <div>
+                            <p>Universidade Virtual do Estado de São Paulo</p>
+                            <p>Ciência de Dados</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="area-idiomas">
+                <h3 class="idioma-texto">Idiomas</h3>
+                <h5>Português</h5>
+                <p>Fluente ou nativo</p>
+                <hr>
+                <h5>Inglês</h5>
+                <p>Básico</p>
+            </section>
+        </div>
+
+        <div class="container-colunas">
+            <section class="card-amg">
+                <h3>As pessoas também viram</h3>
+
+                <div class="card-item">
+                    <div class="card-um">
+                        <img src="src/img/botao - enviar mensagem (1).png" alt="">
+                        <div class="info">
+                            <h4>Nome e sobrenome</h4>
+                            <p>Título, cargo e tecnologias. Lorem corporis aliquam sapiente</p>
+                        </div>
+                    </div>
+                    <button class="bnt-enviar">Enviar mensagem</button>
+                </div>
+
+                <div class="card-item">
+                    <div class="card-um">
+                        <img src="src/img/botao - enviar mensagem.png" alt="">
+                        <div class="info">
+                            <h4>Nome e sobrenome</h4>
+                            <p>Título, cargo e tecnologias. Lorem corporis aliquam sapiente</p>
+                        </div>
+                    </div>
+                    <button class="bnt-enviar">Enviar mensagem</button>
+                </div>
+
+                <div class="card-item">
+                    <div class="card-um">
+                        <img src="src/img/botao - enviar mensagem (3).png" alt="">
+                        <div class="info">
+                            <h4>Nome e sobrenome</h4>
+                            <p>Título, cargo e tecnologias. Lorem corporis aliquam sapiente</p>
+                        </div>
+                    </div>
+                    <button class="bnt-enviar">Enviar mensagem</button>
+                </div>
+
+                <div class="card-item">
+                    <div class="card-um">
+                        <img src="src/img/botao - enviar mensagem (4).png" alt="">
+                        <div class="info">
+                            <h4>Nome e sobrenome</h4>
+                            <p>Título, cargo e tecnologias. Lorem corporis aliquam sapiente</p>
+                        </div>
+                    </div>
+                    <button class="bnt-enviar">Enviar mensagem</button>
+                </div>
+
+                <div class="card-item">
+                    <div class="card-um">
+                        <img src="src/img/botao - enviar mensagem (2).png" alt="">
+                        <div class="info">
+                            <h4>Nome e sobrenome</h4>
+                            <p>Título, cargo e tecnologias. Lorem corporis aliquam sapiente</p>
+                        </div>
+                    </div>
+                    <button class="bnt-enviar">Enviar mensagem</button>
+                </div>
+            </section>
+
+            <section class="card-sugestao">
+                <h3>Pessoas que talvez você conheça</h3>
+
+                <div class="card-item">
+                    <div class="card-um">
+                        <img src="src/img/botao - enviar mensagem (1).png" alt="">
+                        <div class="info">
+                            <h4>Nome e sobrenome</h4>
+                            <p>Título, cargo e tecnologias. Lorem corporis aliquam sapiente</p>
+                        </div>
+                    </div>
+                    <button class="bnt-enviar">Enviar mensagem</button>
+                </div>
+
+                <div class="card-item">
+                    <div class="card-um">
+                        <img src="src/img/botao - enviar mensagem.png" alt="">
+                        <div class="info">
+                            <h4>Nome e sobrenome</h4>
+                            <p>Título, cargo e tecnologias. Lorem corporis aliquam sapiente</p>
+                        </div>
+                    </div>
+                    <button class="bnt-enviar">Enviar mensagem</button>
+                </div>
+
+                <div class="card-item">
+                    <div class="card-um">
+                        <img src="src/img/botao - enviar mensagem (3).png" alt="">
+                        <div class="info">
+                            <h4>Nome e sobrenome</h4>
+                            <p>Título, cargo e tecnologias. Lorem corporis aliquam sapiente</p>
+                        </div>
+                    </div>
+                    <button class="bnt-enviar">Enviar mensagem</button>
+                </div>
+
+                <div class="card-item">
+                    <div class="card-um">
+                        <img src="src/img/botao - enviar mensagem (4).png" alt="">
+                        <div class="info">
+                            <h4>Nome e sobrenome</h4>
+                            <p>Título, cargo e tecnologias. Lorem corporis aliquam sapiente</p>
+                        </div>
+                    </div>
+                    <button class="bnt-enviar">Enviar mensagem</button>
+                </div>
+
+                <div class="card-item">
+                    <div class="card-um">
+                        <img src="src/img/botao - enviar mensagem (2).png" alt="">
+                        <div class="info">
+                            <h4>Nome e sobrenome</h4>
+                            <p>Título, cargo e tecnologias. Lorem corporis aliquam sapiente</p>
+                        </div>
+                    </div>
+                    <button class="bnt-enviar">Enviar mensagem</button>
+                </div>
+            </section>
+        </div>
     </div>
-
-    <div class="menu-icons">
-      <a href="#">
-        <span class="material-symbols-outlined">home</span>
-        <p>Início</p>
-      </a>
-      <a href="#">
-        <span class="material-symbols-outlined">group</span>
-        <p>Minha rede</p>
-      </a>
-      <a href="#">
-        <span class="material-symbols-outlined">badge</span>
-        <p>Vagas</p>
-      </a>
-      <a href="#">
-        <span class="material-symbols-outlined">chat</span>
-        <p>Mensagens</p>
-      </a>
-      <a href="#">
-        <span class="material-symbols-outlined">notifications</span>
-        <p>Notificações</p>
-      </a>
-
-      <div class="divider"></div>
-
-      <a href="#" class="solucoes">
-        <span class="material-symbols-outlined">apps</span>
-        <p>Soluções</p>
-      </a>
-    </div>
-  </nav>
-
-  <div class="main-content-wrapper">
-    <div class="left-column">
-      <header class="profile-header-card">
-        <div class="menu">
-          <img src="src/img/capa_perfil.png" alt="Capa do Perfil" class="img_capa" />
-          <img src="src/img/foto_perfil.jpg" alt="Foto de Perfil" class="img_perfil" />
-
-          <div class="info_perfil">
-            <div class="col_esquerda">
-              <h3 class="nome_perfil">Micheli Melki</h3>
-              <p class="profissao_perfil">
-                Desenvolvedora Front-End | HTML | CSS | Typescript
-              </p>
-              <p class="descricao_perfil">
-                Fala sobre #javascript, #frontend, #reactjs, e #backend
-              </p>
-              <p class="localizacao_perfil">
-                Itapevi, São Paulo, Brasil
-                <strong>informações de contato</strong>
-              </p>
-              <p class="seguindo_conexao">Seguindo 100 Conexões 130</p>
-
-              <button class="btn_left">Mensagem</button>
-              <button class="btn_rigth">Mais</button>
-            </div>
-
-            <div class="col_direita">
-              <div class="empresa-box">
-                <img src="src/img/univesp_logo.png" alt="Logo Univesp" class="logo_empresa" />
-                <span class="empresa">Univesp</span>
-              </div>
-              <div class="empresa-box">
-                <img src="src/img/alura_logo.png" alt="Logo Alura" class="logo_empresa" />
-                <span class="empresa">Alura</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
-
-      <section class="destaques card">
-        <h2>Destaques</h2>
-        <div class="publicacoes">
-          <div class="publicacao">
-            <p class="texto-superior">Publicação</p>
-            <p class="texto-inferior">Desenvolvimento de Software</p>
-            <img src="src/img/publicacao-1.jpg" class="img_1" alt="Imagem destaque" />
-            <div class="area-interacao">
-              <p class="interacao">124</p>
-              <p class="comentario">5 comentários</p>
-            </div>
-          </div>
-
-          <div class="publicacao">
-            <p class="texto-superior">Publicação</p>
-            <p class="texto-inferior">Desenvolvimento de Software</p>
-            <img src="src/img/publicacao-2.jpg" class="img_2" alt="Imagem destaque" />
-            <div class="area-interacao">
-              <p class="interacao">124</p>
-              <p class="comentario">5 comentários</p>
-            </div>
-          </div>
-
-          <div class="publicacao">
-            <p class="texto-superior">Publicação</p>
-            <p class="texto-inferior">Desenvolvimento de Software</p>
-            <img src="src/img/publicacao-3.jpg" class="img_3" alt="Imagem destaque" />
-            <div class="area-interacao">
-              <p class="interacao">124</p>
-              <p class="comentario">5 comentários</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="card-atividade card">
-        <h2>Atividades</h2>
-        <p class="seg">154 seguidores</p>
-        <div class="publiatv">
-          <p class="qm-comentou">Lana Del Rey publicou isso 1 sem</p>
-          <div class="atividade-item">
-            <img src="src/img/publicacao-1.jpg" alt="Publicação" class="publimg" />
-            <p class="txt-atv">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-              dolorum aut ullam, aliquid minus quia quis odio vel sed a
-              blanditiis excepturi doloremque est sapiente neque cupiditate
-              quod dolore nulla.
-            </p>
-          </div>
-          <div class="area-interacao">
-            <p class="num">124</p>
-            <p class="cmt">5 comentários</p>
-          </div>
-          <hr />
-          <p class="qm-comentou">Zayn Malik publicou isso 1 sem</p>
-          <div class="atividade-item">
-            <img src="src/img/publicacao-2.jpg" alt="Publicação" class="publimg" />
-            <p class="txt-atv">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-              dolorum aut ullam, aliquid minus quia quis odio vel sed a
-              blanditiis excepturi doloremque est sapiente neque cupiditate
-              quod dolore nulla.
-            </p>
-          </div>
-          <div class="area-interacao">
-            <p class="num">124</p>
-            <p class="cmt">5 comentários</p>
-          </div>
-          <hr />
-          <p class="exibir">Exibir todas as atividades</p>
-        </div>
-      </section>
-
-      <section class="sobre card">
-        <h2>Sobre</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis,
-          recusandae? Doloribus culpa hic provident facilis atque, magni
-          quaerat voluptatibus delectus, doloremque voluptates tempore
-          deserunt illum, iste quod repellendus blanditiis quisquam!
-        </p>
-      </section>
-
-      <section class="experiencia card">
-        <h2>Experiência</h2>
-        <div class="experiencia-header">
-          <img class="ex-img" src="src/img/empresa-foto.png" alt="Logo da Empresa" />
-          <div class="empresa-info">
-            <h3>Empresa</h3>
-            <p>1 a 7 m</p>
-          </div>
-        </div>
-
-        <div class="experiencia-item">
-          <h3>Fullstack Developer</h3>
-          <p>Tempo integral</p>
-          <p>jan de 2022 - o momento 5 meses</p>
-          <p>Cidade, estado e país</p>
-        </div>
-        <div class="experiencia-item">
-          <div class="empresa-info">
-            <h3>Fullstack Devoloper (JR)</h3>
-          </div>
-          <p>Tempo integral</p>
-          <p>jun de 2021 - jan de 2022 8 meses</p>
-          <p>Cidade, estado e país</p>
-        </div>
-        <div class="experiencia-item">
-          <div class="empresa-info">
-            <h3>Front-end Developer</h3>
-          </div>
-          <p>Tempo integral</p>
-          <p>jan de 2021 - jun de 2021 6 meses</p>
-          <p>Cidade, estado e país</p>
-        </div>
-      </section>
-
-      <section class="area-form">
-        <h3 class="titulo-form">Formação acadêmica</h3>
-        <div class="form-inf">
-          <div class="bloco-form">
-            <img src="src/img/empresa-foto (1).png">
-            <div>
-              <p>Universidade Virtual do Estado de São Paulo</p>
-              <p>Ciência de Dados</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="area-idiomas">
-        <h3 class="idioma-texto">Idiomas</h3>
-        <h5>Português</h5>
-        <p>Fluente ou nativo</p>
-        <hr>
-        <h5>Inglês</h5>
-        <p>Básico</p>
-
-    </div>
-    </section>
-
-
-  </div>
-  <div class="right-column"></div>
-  </div>
 </body>
 
 </html>

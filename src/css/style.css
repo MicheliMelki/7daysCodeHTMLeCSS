@@ -2,7 +2,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; 
+    box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -25,21 +25,21 @@ body {
 
 /* --- BARRA DE NAVEGAÇÃO SUPERIOR (NAVBAR) --- */
 .navbar {
-    display: flex; 
+    display: flex;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between;
     background-color: var(--fundo-card);
     padding: 10px 20px;
 }
 
 .search {
-    position: relative; 
+    position: relative;
     display: flex;
     align-items: center;
 }
 
 .search input {
-    padding-left: 30px; 
+    padding-left: 30px;
     height: 30px;
     border-radius: 5px;
     color: var(--texto-principal);
@@ -49,22 +49,22 @@ body {
 }
 
 .search .material-symbols-outlined {
-    position: absolute; 
+    position: absolute;
     left: 8px;
     color: var(--texto-principal);
     font-size: 20px;
-    pointer-events: none; 
+    pointer-events: none;
 }
 
 .menu-icons {
-    display: flex; 
+    display: flex;
     color: var(--texto-principal);
-    gap: 20px; 
+    gap: 20px;
 }
 
 .menu-icons a {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
     text-decoration: none;
     color: var(--texto-principal);
@@ -72,18 +72,18 @@ body {
 }
 
 .menu-icons a:hover {
-    color: #0073b1; 
+    color: #0073b1;
 }
 
 .material-symbols-outlined {
-    font-size: 24px; 
+    font-size: 24px;
 }
 
 .divider {
     width: 1px;
     height: 30px;
     background-color: white;
-    margin: 0 10px; 
+    margin: 0 10px;
 }
 
 .solucoes {
@@ -94,25 +94,21 @@ body {
 
 /* --- LAYOUT PRINCIPAL DO CONTEÚDO (COLUNAS) --- */
 .main-content-wrapper {
-    display: flex; 
-    justify-content: center; 
-    gap: 24px; 
-    padding: 24px 0; 
-    width: 100%; 
-    max-width: 1200px; 
-    margin: 24px auto; 
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding: 24px 0;
+    width: 100%;
+    max-width: 1200px;
+    margin: 24px auto;
 }
 
 .left-column {
     display: flex;
-    flex-direction: column; 
-    gap: 12px; 
-    width: 780px; 
-    
-}
+    flex-direction: column;
+    gap: 12px;
+    width: 780px;
 
-.right-column {
-    width: 300px; 
 }
 
 /* --- ESTILOS GERAIS PARA TODOS OS CARDS --- */
@@ -120,29 +116,29 @@ body {
     background-color: var(--fundo-card);
     border-radius: 16px;
     padding: 16px;
-    margin-top: 0; 
-    height: auto; 
+    margin-top: 0;
+    height: auto;
 }
 
 /* --- SEÇÃO DE CABEÇALHO DO PERFIL (HEADER) --- */
 .profile-header-card {
-    width: 100%; 
-    height: 418px; 
+    width: 100%;
+    height: 418px;
     border-radius: 15px;
     background-color: var(--fundo-card);
-    }
+}
 
 .menu {
-    position: relative; 
+    position: relative;
 }
 
 .menu .img_capa {
     width: 100%;
     height: 230px;
-    object-fit: cover; 
+    object-fit: cover;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
-    margin-top: 0; 
+    margin-top: 0;
 }
 
 .img_perfil {
@@ -151,18 +147,18 @@ body {
     object-fit: cover;
     border-radius: 50%;
     border: 3px solid white;
-    position: absolute; 
+    position: absolute;
     top: 100px;
     left: 20px;
-    z-index: 2; 
+    z-index: 2;
 }
 
 .info_perfil {
-    display: flex; 
-    gap: 30px; 
-    align-items: flex-start; 
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
     margin-top: 25px;
-    margin-left: 23px; 
+    margin-left: 23px;
     color: var(--texto-principal);
 }
 
@@ -173,7 +169,7 @@ body {
 .profissao_perfil {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 600;
-    font-style: normal; 
+    font-style: normal;
     font-size: 16px;
     color: var(--texto-principal);
 }
@@ -214,24 +210,24 @@ body {
     cursor: pointer;
 }
 
-.info_perfil > div.col_direita {
+.info_perfil>div.col_direita {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     gap: 12px;
 }
 
 .empresa-box {
-    display: flex; 
-    align-items: center; 
-    gap: 8px; 
-    margin-left: 23px; 
-    margin-top: 10px; 
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: 23px;
+    margin-top: 10px;
 }
 
 .logo_empresa {
     width: 25px;
     height: 25px;
-    margin: 0; 
+    margin: 0;
     display: inline-block;
 }
 
@@ -245,21 +241,21 @@ body {
 /* --- SEÇÃO DE DESTAQUES --- */
 .destaques {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
 }
 
 .publicacoes {
-    display: flex; 
+    display: flex;
     flex-direction: row;
-    gap: 16px; 
-    margin-top: 16px; 
-    justify-content: flex-start; 
-    flex-wrap: wrap; 
+    gap: 16px;
+    margin-top: 16px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 .publicacao {
-    width: 238px; 
-    height: auto; 
+    width: 238px;
+    height: auto;
     display: flex;
     flex-direction: column;
     padding: 8px;
@@ -290,7 +286,7 @@ body {
 
 /* --- SEÇÃO DE ATIVIDADES --- */
 .card-atividade h2 {
-    padding-top: 10px; 
+    padding-top: 10px;
     padding-left: 16px;
 }
 
@@ -308,16 +304,16 @@ body {
 }
 
 .publimg {
-    margin-left: 16px; 
+    margin-left: 16px;
     width: 64px;
     height: 64px;
 }
 
 .atividade-item {
-    display: flex; 
-    gap: 16px; 
-    margin: 16px; 
-    align-items: flex-start; 
+    display: flex;
+    gap: 16px;
+    margin: 16px;
+    align-items: flex-start;
 }
 
 .atividade-item .publimg {
@@ -327,7 +323,7 @@ body {
 }
 
 .atividade-item .txt-atv {
-    flex: 1; 
+    flex: 1;
     color: var(--texto-principal);
     font-size: 14px;
     line-height: 1.4;
@@ -337,27 +333,27 @@ body {
 /* Ajuste da área de interação os card */
 .area-interacao {
     display: flex;
-    justify-content: space-between; 
-    margin: 8px 0; 
+    justify-content: space-between;
+    margin: 8px 0;
     margin-top: 5px;
     font-size: 14px;
     color: var(--texto-principal);
     font-size: 12px;
-    padding: 0 16px; 
+    padding: 0 16px;
 }
 
 .num {
-    padding-left: 0; 
+    padding-left: 0;
 }
 
 .cmt {
-    padding-left: 0; 
+    padding-left: 0;
 }
 
 .exibir {
     text-align: center;
     color: var(--texto-secundario);
-    padding: 16px; 
+    padding: 16px;
 }
 
 .sobre h2 {
@@ -375,28 +371,28 @@ body {
 
 /* --- SEÇÃO DE EXPERIÊNCIA --- */
 .experiencia {
-       padding-bottom: 16px;
+    padding-bottom: 16px;
 }
 
 .experiencia-header {
-    display: flex; 
-    align-items: center; 
-    gap: 10px; 
-    padding-bottom: 10px; 
-    padding-left: 16px; 
-    margin-bottom: 10px; 
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+    margin-bottom: 10px;
 }
 
 .experiencia h2 {
-    padding-top: 0; 
-    padding-left: 0; 
+    padding-top: 0;
+    padding-left: 0;
     font-size: 20px;
-    margin-bottom: 0; 
+    margin-bottom: 0;
 }
 
 .experiencia-item {
     margin-bottom: 15px;
-    padding-left: 67px;  
+    padding-left: 67px;
 }
 
 .experiencia-item h4 {
@@ -409,56 +405,126 @@ body {
     color: var(--texto-secundario);
 }
 
-    /* SEÇÃO FORMAÇÃO */
+/* SEÇÃO FORMAÇÃO */
 
 .area-form {
-  padding: 0 16px;
-  color: var(--texto-principal);
-  padding-top: 14px;
-  margin-top: 8px;
-  background: var(--fundo-card);
-  border-radius: 16px;
-  width: 780px;
-  height: 127px;
+    padding: 0 16px;
+    color: var(--texto-principal);
+    padding-top: 14px;
+    margin-top: 8px;
+    background: var(--fundo-card);
+    border-radius: 16px;
+    width: 780px;
+    height: 127px;
 }
 
 .titulo-form {
-  font-size: 20px;
-  margin-bottom: 12px;
+    font-size: 20px;
+    margin-bottom: 12px;
 }
 
 .form-inf {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
 .bloco-form {
-  display: flex;
-  align-items: center;
-  gap: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
 .bloco-form img {
-  width: 60px;
-  height: 60px;
-  object-fit: cover;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
 }
 
-    /* SEÇÃO FORMAÇÃO */
-.area-idiomas{
+/* SEÇÃO FORMAÇÃO */
+.area-idiomas {
     padding: 0 16px;
-  color: var(--texto-principal);
-  padding-top: 14px;
-  margin-top: 8px;
-  background: var(--fundo-card);
-  border-radius: 16px;
-  width: 780px;
-  height: 127px;
+    color: var(--texto-principal);
+    padding-top: 14px;
+    margin-top: 8px;
+    background: var(--fundo-card);
+    border-radius: 16px;
+    width: 780px;
+    height: 127px;
 }
 
-.area-idiomas p{
-font-size: 14px;
-color: var(--texto-secundario);
+.area-idiomas p {
+    font-size: 14px;
+    color: var(--texto-secundario);
 }
 
+/* SEÇÃO DA COLUNA A DIREITA */
+.container-colunas {
+display: flex;
+flex-direction: column;
+gap: 12px;
+
+}
+
+.card-amg,
+.card-sugestao {
+    width: 400px;
+    height: 656px;
+    background: var(--fundo-card);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 20px; /* Adicionado para espaçar os cards */
+
+}
+
+.card-amg h3,
+.card-sugestao h3 {
+    text-align: left;
+    padding: 0; /* Removido o padding para não criar espaço extra */
+}
+
+.card-amg p,
+.card-sugestao p {
+    color: var(--texto-secundario);
+    font-size: 12px;
+}
+
+.card-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espaço entre o card e o botão */
+}
+
+.card-um {
+    display: flex;
+    gap: 16px;
+    margin: 0; /* Removido o margin para o espaçamento ficar a cargo do pai */
+    align-items: flex-start;
+}
+
+.card-um img {
+    width: 64px;
+    height: 64px;
+    padding-left: 2px;
+}
+
+.card-um .info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Espaço entre os elementos de texto */
+}
+
+.bnt-enviar {
+    width: 154px;
+    height: 28px;
+    border-radius: 16px;
+    background-color: var(--fundo-card);
+    color: var(--texto-principal);
+    border: var(--texto-principal) 1px solid;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    align-self: center; /* Centraliza o botão no eixo transversal */
+}
